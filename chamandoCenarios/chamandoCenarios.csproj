@@ -91,18 +91,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="autenticar.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>autenticar.feature</DependentUpon>
-    </Compile>
-    <Compile Include="AutenticarNoSistemaSteps.cs" />
+    <Compile Include="AutenticacaoNoSistemaSteps.cs" />
     <Compile Include="cadastrar.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>cadastrar.feature</DependentUpon>
     </Compile>
     <Compile Include="CadastrarSteps.cs" />
+    <Compile Include="login.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login.feature</DependentUpon>
+    </Compile>
     <Compile Include="organizacaoCenarios.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,13 +114,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="autenticar.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>autenticar.feature.cs</LastGenOutput>
-    </None>
     <None Include="cadastrar.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>cadastrar.feature.cs</LastGenOutput>
+    </None>
+    <None Include="login.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>login.feature.cs</LastGenOutput>
     </None>
     <None Include="organizacaoCenarios.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

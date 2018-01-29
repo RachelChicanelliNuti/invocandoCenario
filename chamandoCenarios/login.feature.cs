@@ -18,21 +18,21 @@ namespace chamandoCenarios
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("autenticar no sistema")]
-    public partial class AutenticarNoSistemaFeature
+    [NUnit.Framework.DescriptionAttribute("Autenticação no sistema")]
+    public partial class AutenticacaoNoSistemaFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "autenticar.feature"
+#line 1 "login.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "autenticar no sistema", "\tPara acessar tela de escolha de módulo\r\nEnquanto usuário\r\nEu gostaria de me aute" +
-                    "nticar no sistema e escolher o perfil", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Autenticação no sistema", "Para acessar tela de escolha de módulo\r\nEnquanto usuário\r\nEu gostaria de me auten" +
+                    "ticar no sistema e escolher o perfil", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,28 +65,23 @@ namespace chamandoCenarios
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("autenticar no sistema")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("628.326.360-71", "123456", "Autenticacao com sucesso", null)]
-        public virtual void AutenticarNoSistema(string cpf, string senha, string mensagem, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Autenticação com sucesso")]
+        [NUnit.Framework.TestCaseAttribute("11111111111", "1111111111", "\'Bem-vindo\'", null)]
+        public virtual void AutenticacaoComSucesso(string cpf, string senha, string mensagem, string[] exampleTags)
         {
-            string[] @__tags = new string[] {
-                    "mytag"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("autenticar no sistema", @__tags);
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autenticação com sucesso", exampleTags);
+#line 6
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 7
+ testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
  testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 10
+#line 9
  testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+ testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.When("clico no botão entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 12
- testRunner.Then(string.Format("tvejo na tela {0}", mensagem), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("vejo na tela {0}", mensagem), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
