@@ -19,7 +19,6 @@ namespace chamandoCenarios
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("cadastrar")]
-    [NUnit.Framework.CategoryAttribute("cadastro")]
     public partial class CadastrarFeature
     {
         
@@ -33,8 +32,7 @@ namespace chamandoCenarios
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "cadastrar", "\tComo usuario do sistema\r\n\tEu quero me registrar\r\n\tPara que eu possa acessar o si" +
-                    "stema", ProgrammingLanguage.CSharp, new string[] {
-                        "cadastro"});
+                    "stema", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -68,7 +66,7 @@ namespace chamandoCenarios
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Cadastrar Ususario")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("cadastroUsuario")]
         [NUnit.Framework.TestCaseAttribute("Rachel tester", "racheltestandoo@mailinator.com", "06/12/1977", "27532063-7", "65999666917", "Av.Florais", "875", "Ribeirão", "Q.05", "78048-135", "Mato Grosso do Sul", "Água Clara", "628.326.360-71", "123456", "123456", null)]
         public virtual void CadastrarUsusario(
                     string nome, 
@@ -89,49 +87,49 @@ namespace chamandoCenarios
                     string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "cadastroUsuario"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastrar Ususario", @__tags);
-#line 8
+#line 7
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 8
  testRunner.Given("que estou na pagina de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 9
  testRunner.And(string.Format("eu preencho o campo nome {0}", nome), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 11
+#line 10
  testRunner.And(string.Format("eu preencho o campo email {0}", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 12
+#line 11
  testRunner.And(string.Format("eu preencho o campo nascimento {0}", nascimento), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 13
+#line 12
  testRunner.And(string.Format("eu preencho o campo rg {0}", rg), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
+#line 13
  testRunner.And(string.Format("eu preencho o campo celular{0}", celular), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 15
+#line 14
  testRunner.And(string.Format("eu preencho o campo logradouro{0}", logradouro), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 16
+#line 15
  testRunner.And(string.Format("eu preencho o campo numero{0}", numero), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
+#line 16
  testRunner.And(string.Format("eu preencho o campo bairro{0}", bairro), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 17
  testRunner.And(string.Format("eu preencho o campo complemento{0}", complemento), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 19
+#line 18
  testRunner.And(string.Format("eu preencho o campo cep{0}", cep), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 20
+#line 19
  testRunner.And(string.Format("eu preencho o campo uf {0}", uf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 21
+#line 20
  testRunner.And(string.Format("eu preencho o campo municipio {0}", municipio), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 22
+#line 21
  testRunner.And(string.Format("eu preencho o campo cpf{0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 23
+#line 22
  testRunner.And(string.Format("eu preencho o campo senha {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 24
+#line 23
  testRunner.And(string.Format("eu preencho o campo repetir {0}", repetir), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 25
+#line 24
  testRunner.And("eu aceito o Termo de uso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 26
+#line 25
  testRunner.Then("eu clico no botao Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

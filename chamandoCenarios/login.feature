@@ -3,6 +3,7 @@ Para acessar tela de escolha de módulo
 Enquanto usuário
 Eu gostaria de me autenticar no sistema e escolher o perfil
 
+@loginUsuario
 Scenario Outline: Autenticação com sucesso
 	Given que estou na página de autenticacao 
 	When eu preencho o campo CPF com o valor <cpf>

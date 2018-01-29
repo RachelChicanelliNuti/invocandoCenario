@@ -1,10 +1,9 @@
-﻿@cadastro
-Feature: cadastrar
+﻿Feature: cadastrar
 	Como usuario do sistema
 	Eu quero me registrar
 	Para que eu possa acessar o sistema
 
-@mytag
+@cadastroUsuario
 Scenario Outline: Cadastrar Ususario
 	Given que estou na pagina de cadastro 
 	And eu preencho o campo nome <nome>

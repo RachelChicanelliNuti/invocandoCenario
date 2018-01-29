@@ -66,21 +66,28 @@ namespace chamandoCenarios
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Autenticação com sucesso")]
+        [NUnit.Framework.CategoryAttribute("loginUsuario")]
         [NUnit.Framework.TestCaseAttribute("11111111111", "1111111111", "\'Bem-vindo\'", null)]
         public virtual void AutenticacaoComSucesso(string cpf, string senha, string mensagem, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autenticação com sucesso", exampleTags);
-#line 6
-this.ScenarioSetup(scenarioInfo);
+            string[] @__tags = new string[] {
+                    "loginUsuario"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autenticação com sucesso", @__tags);
 #line 7
- testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
- testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
+ testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 12
  testRunner.Then(string.Format("vejo na tela {0}", mensagem), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
