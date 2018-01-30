@@ -12,6 +12,9 @@ namespace chamandoCenarios
     public class CadastrarSteps : Steps
     {
         private IWebDriver driver = new ChromeDriver();
+        private string _cpf;
+        private string _senha;
+
         [Given(@"que estou na pagina de cadastro")]
         public void GivenQueEstouNaPaginaDeCadastro()
         {
@@ -124,6 +127,7 @@ namespace chamandoCenarios
         {
             IWebElement cpfTxt = driver.FindElement(By.Id("CPF"));
             cpfTxt.SendKeys(cpf);
+            _cpf = cpf;
         }
 
         [Given(@"eu preencho o campo senha (.*)")]
@@ -131,6 +135,7 @@ namespace chamandoCenarios
         {
             IWebElement senhaTxt = driver.FindElement(By.Id("Senha"));
             senhaTxt.SendKeys(senha);
+            _senha = senha;
         }
 
         [Given(@"eu preencho o campo repetir (.*)")]
@@ -161,12 +166,11 @@ namespace chamandoCenarios
         public void GivenQueEstouNaTelaDeLogin()
         {
             Given(@"que estou na página de autenticacao");
-            When(@"eu preencho o campo CPF com o valor (.*)");
-            When(@"preencha o campo Senha com o valor (.*)");
+            When(string.Format("eu preencho o campo CPF com o valor {0}", _cpf));
+            When(string.Format("preencha o campo Senha com o valor {0}", _senha));
             When(@"clico no botão Entrar");
             Then(@"vejo na tela (.*)");
         }
-
 
     }
 

@@ -67,7 +67,7 @@ namespace chamandoCenarios
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Cadastrar Ususario")]
         [NUnit.Framework.CategoryAttribute("cadastroUsuario")]
-        [NUnit.Framework.TestCaseAttribute("MAQ", "maqw34@mailinator.com", "06/12/1977", "27532063-7", "65999666917", "Av.Florais", "875", "Ribeirão", "Q.05", "78048-135", "Mato Grosso do Sul", "Água Clara", "128.593.763-56", "123456", "123456", null)]
+        [NUnit.Framework.TestCaseAttribute("MAQ", "maqw35@mailinator.com", "06/12/1977", "27532063-7", "65999666917", "Av.Florais", "875", "Ribeirão", "Q.05", "78048-135", "Mato Grosso do Sul", "Água Clara", "723.223.550-03", "123456", "123456", null)]
         public virtual void CadastrarUsusario(
                     string nome, 
                     string email, 
