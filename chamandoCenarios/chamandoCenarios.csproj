@@ -103,12 +103,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>login.feature</DependentUpon>
     </Compile>
-    <Compile Include="organizacaoCenarios.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>organizacaoCenarios.feature</DependentUpon>
-    </Compile>
-    <Compile Include="OrganizacaoCenariosSteps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -121,10 +115,6 @@
     <None Include="login.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>login.feature.cs</LastGenOutput>
-    </None>
-    <None Include="organizacaoCenarios.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>organizacaoCenarios.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
