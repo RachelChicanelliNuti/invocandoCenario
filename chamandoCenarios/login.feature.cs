@@ -67,7 +67,7 @@ namespace chamandoCenarios
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Autenticação com sucesso")]
         [NUnit.Framework.CategoryAttribute("loginUsuario")]
-        [NUnit.Framework.TestCaseAttribute("11111111111", "1111111111", "\'Bem-vindo\'", null)]
+        [NUnit.Framework.TestCaseAttribute("128.593.763-56", "123456", "\'Bem-vindo\'", null)]
         public virtual void AutenticacaoComSucesso(string cpf, string senha, string mensagem, string[] exampleTags)
         {
             string[] @__tags = new string[] {

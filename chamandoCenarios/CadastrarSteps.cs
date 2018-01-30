@@ -9,7 +9,7 @@ using System.Threading;
 namespace chamandoCenarios
 {
     [Binding]
-    public class CadastrarSteps
+    public class CadastrarSteps : Steps
     {
         private IWebDriver driver = new ChromeDriver();
         [Given(@"que estou na pagina de cadastro")]
@@ -157,10 +157,18 @@ namespace chamandoCenarios
             driver.FindElement(By.Id("btnAdicionar")).Click();
         }
 
+        [Given(@"que estou na tela de login")]
+        public void GivenQueEstouNaTelaDeLogin()
+        {
+            Given(@"que estou na página de autenticacao");
+            When(@"eu preencho o campo CPF com o valor (.*)");
+            When(@"preencha o campo Senha com o valor (.*)");
+            When(@"clico no botão Entrar");
+            Then(@"vejo na tela (.*)");
+        }
 
 
-       
     }
 
-   
+
 }
