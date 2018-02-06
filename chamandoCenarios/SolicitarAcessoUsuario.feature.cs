@@ -18,21 +18,21 @@ namespace chamandoCenarios
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Autenticação no sistema")]
-    public partial class AutenticacaoNoSistemaFeature
+    [NUnit.Framework.DescriptionAttribute("Solicitar Acesso ao Sistema")]
+    public partial class SolicitarAcessoAoSistemaFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "login.feature"
+#line 1 "SolicitarAcessoUsuario.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Autenticação no sistema", "Para acessar tela de escolha de módulo\r\nEnquanto usuário\r\nEu gostaria de me auten" +
-                    "ticar no sistema e escolher o perfil", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Solicitar Acesso ao Sistema", "\tComo usuario do sistema\r\n\tEu quero solicitar a liberacao\r\n\tPara que eu possa ace" +
+                    "ssar o sistema", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,30 +65,30 @@ namespace chamandoCenarios
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Autenticação com sucesso")]
-        [NUnit.Framework.CategoryAttribute("loginUsuario")]
-        [NUnit.Framework.TestCaseAttribute("442.036.078-09", "123456", "\'Bem-vindo\'", null)]
-        public virtual void AutenticacaoComSucesso(string cpf, string senha, string mensagem, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("solicitacao com sucesso")]
+        [NUnit.Framework.CategoryAttribute("solicitarAcessoUsuario")]
+        [NUnit.Framework.TestCaseAttribute("787.183.786-92", "Para fins de Teste", null)]
+        public virtual void SolicitacaoComSucesso(string matriculaSoli, string justfivativaSoli, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "loginUsuario"};
+                    "solicitarAcessoUsuario"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Autenticação com sucesso", @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("solicitacao com sucesso", @__tags);
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("que estou na página de solicitacao de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.When(string.Format("eu preencho o campo CPF com o valor {0}", cpf), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("clico no botao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
- testRunner.And(string.Format("preencha o campo Senha com o valor {0}", senha), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("clico em Solicitacao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
- testRunner.When("clico no botão Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And(string.Format("preenchi o mesmo com dados válidos {0}", matriculaSoli), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.Then(string.Format("vejo na tela {0}", mensagem), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("clico no botao salvar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

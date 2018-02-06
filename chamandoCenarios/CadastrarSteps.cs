@@ -172,6 +172,17 @@ namespace chamandoCenarios
             Then(@"vejo na tela (.*)");
         }
 
+        [Given(@"que estou na tela de solicitação de acesso")]
+        public void GivenQueEstouNaTelaDeSolicitacaoDeAcesso()
+        {
+            Given(@"que estou na página de solicitacao de cadastro");
+            Given(@"clico no botao de acesso");
+            Given(@"clico em Solicitacao de acesso");
+            Given(string.Format("GivenPreenchiOMesmoComDadosValidos {0}", _cpf));
+            Then(@"clico no botao salvar");
+        }
+
+
     }
 
 

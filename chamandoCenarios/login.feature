@@ -13,4 +13,4 @@ Scenario Outline: Autenticação com sucesso
 
 	Examples:
 	| cpf           | senha        | mensagem     |
-	| 811.650.896-29   | 123456 | 'Bem-vindo'   |
+	| 442.036.078-09   | 123456 | 'Bem-vindo'   |

@@ -67,7 +67,7 @@ namespace chamandoCenarios
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Cadastrar Ususario")]
         [NUnit.Framework.CategoryAttribute("cadastroUsuario")]
-        [NUnit.Framework.TestCaseAttribute("MAQ", "maqw38@mailinator.com", "06/12/1977", "27532063-7", "65999666917", "Av.Florais", "875", "Ribeirão", "Q.05", "78048-135", "Mato Grosso do Sul", "Água Clara", "811.650.896-29", "123456", "123456", null)]
+        [NUnit.Framework.TestCaseAttribute("MAQ3", "maqw44@mailinator.com", "06/12/1977", "27532063-7", "65999666917", "Av.Florais", "875", "Ribeirão", "Q.05", "78048-135", "Mato Grosso do Sul", "Água Clara", "231.842.588-40", "123456", "123456", null)]
         public virtual void CadastrarUsusario(
                     string nome, 
                     string email, 
@@ -132,7 +132,9 @@ this.ScenarioSetup(scenarioInfo);
 #line 25
  testRunner.Then("eu clico no botao Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 26
- testRunner.Given("que estou na tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 27
+ testRunner.Given("que estou na tela de solicitação de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             this.ScenarioCleanup();
         }
