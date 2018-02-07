@@ -80,7 +80,7 @@ namespace chamandoCenarios
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("que estou na página de solicitacao de cadastro", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("que estou na página de solicitacao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.And("clico no botao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10

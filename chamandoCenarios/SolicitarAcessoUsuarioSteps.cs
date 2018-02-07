@@ -21,7 +21,7 @@ namespace chamandoCenarios
             driver = new ChromeDriver(options);
         }
 
-        [Given(@"que estou na página de solicitacao de cadastro")]
+        [Given(@"que estou na página de solicitacao de acesso")]
         public void GivenQueEstouNaPaginaDeSolicitacaoDeCadastro()
         {
             driver.Navigate().GoToUrl("http://localhost:49403/Login/Blank");
@@ -42,7 +42,7 @@ namespace chamandoCenarios
         [Given(@"preenchi o mesmo com dados válidos (.*)")]
         public void GivenPreenchiOMesmoComDadosValidos(string matriculaSoli)
         {
-            var selectEstatutario = new SelectElement(driver.FindElement(By.Name("-- Selecione --")));
+            var selectEstatutario = new SelectElement(driver.FindElement(By.Name("TipoVinculo")));
             selectEstatutario.SelectByText("Estatuário");
             Thread.Sleep(2000);
 

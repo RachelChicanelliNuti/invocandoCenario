@@ -132,7 +132,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 25
  testRunner.Then("eu clico no botao Entrar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 26
- testRunner.Given("que estou na página de autenticacao", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("que estou na tela de login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 27
  testRunner.Given("que estou na tela de solicitação de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden

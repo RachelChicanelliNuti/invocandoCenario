@@ -23,7 +23,7 @@ Scenario Outline: Cadastrar Ususario
 	And eu preencho o campo repetir <repetir>
 	And eu aceito o Termo de uso
 	Then eu clico no botao Entrar
-	Given que estou na página de autenticacao
+	Given que estou na tela de login
 	Given que estou na tela de solicitação de acesso
 
 	Examples: 

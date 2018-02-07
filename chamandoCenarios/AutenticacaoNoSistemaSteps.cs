@@ -49,10 +49,10 @@ namespace chamandoCenarios
         {
             bool achouTexto = driver.PageSource.Contains(mensagem);
         }
-        [AfterScenario]
-        public void FechaBrowser()
-        {
-            driver.Dispose();
-        }
+        //[AfterScenario]
+        //public void FechaBrowser()
+        //{
+        //    driver.Dispose();
+        //}
     }
 }

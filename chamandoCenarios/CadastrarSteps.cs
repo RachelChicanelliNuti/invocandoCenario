@@ -175,10 +175,10 @@ namespace chamandoCenarios
         [Given(@"que estou na tela de solicitação de acesso")]
         public void GivenQueEstouNaTelaDeSolicitacaoDeAcesso()
         {
-            Given(@"que estou na página de solicitacao de cadastro");
+            Given(@"que estou na página de solicitacao de acesso");
             Given(@"clico no botao de acesso");
             Given(@"clico em Solicitacao de acesso");
-            Given(string.Format("GivenPreenchiOMesmoComDadosValidos {0}", _cpf));
+            Given(string.Format("preenchi o mesmo com dados válidos {0}", _cpf));
             Then(@"clico no botao salvar");
         }
 
