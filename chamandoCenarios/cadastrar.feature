@@ -24,8 +24,7 @@ Scenario Outline: Cadastrar Ususario
 	And eu aceito o Termo de uso
 	Then eu clico no botao Entrar
 	Given que estou na tela de login
-	Given que estou na tela de solicitação de acesso
-
+	
 	Examples: 
 	| nome          | email                          | nascimento | rg         | celular     | logradouro | numero | bairro   | complemento | cep       | uf                 | municipio  | cpf            | senha  | repetir |
-	| MAQ3 | maqw44@mailinator.com | 06/12/1977 | 27532063-7 | 65999666917 | Av.Florais | 875    | Ribeirão | Q.05        | 78048-135 | Mato Grosso do Sul | Água Clara | 231.842.588-40 | 123456 | 123456  |
+	| MAQ | maqw45@mailinator.com | 06/12/1977 | 27532063-7 | 65999666917 | Av.Florais | 875    | Ribeirão | Q.05        | 78048-135 | Mato Grosso do Sul | Água Clara | 231.842.588-40 | 123456 | 123456  |

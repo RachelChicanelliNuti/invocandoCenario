@@ -82,7 +82,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
  testRunner.Given("que estou na página de solicitacao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("clico no botao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("clico no botao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 10
  testRunner.And("clico em Solicitacao de acesso", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11

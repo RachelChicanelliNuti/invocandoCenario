@@ -22,7 +22,7 @@ namespace chamandoCenarios
         }
 
         [Given(@"que estou na página de solicitacao de acesso")]
-        public void GivenQueEstouNaPaginaDeSolicitacaoDeCadastro()
+        public void GivenQueEstouNaPaginaDeSolicitacaoDeAcesso()
         {
             driver.Navigate().GoToUrl("http://localhost:49403/Login/Blank");
         }
@@ -82,11 +82,7 @@ namespace chamandoCenarios
             driver.FindElement(By.ClassName("btn btn-primary")).Click();
         }
 
-        [AfterScenario]
-        public void FechaBrowser()
-        {
-            driver.Dispose();
-        }
+
 
     }
 }
